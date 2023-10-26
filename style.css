@@ -9,6 +9,8 @@
 
 body {
   display: flex;
+  position: relative;
+  width: 100%;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
@@ -23,8 +25,10 @@ body {
 .busca {
   position: absolute;
   top: 470px;
-  left: 670px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   width: 300px;
 }
 
@@ -57,12 +61,15 @@ body {
 }
 
 .resultado {
-  width: 300px;
-  display: none;
-  border: 1px dotted #FFF;
+  position: absolute;
+  top: 70px;
+  width: 320px;
+  height: 350px;
+  display: non;
+  border: 3px dotted #FFF;
   margin-top: 20px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: rgb(9, 51, 61);
 }
 
 .titulo {
@@ -131,15 +138,20 @@ body {
   transform-origin: left;
 }
 
+.img {
+  width: 90px;
+}
+
 .aviso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 485px;
-  color: #0c0c0c;
+  top: 495px;
+  color: #131313;
   padding-top: 20px;
   font-family: sans-serif;
-}
-.aviso img {
-  width: 90px;
+  font-weight: bold;
 }
 
 footer {
