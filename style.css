@@ -47,10 +47,13 @@ body {
   border-radius: 5px;
   margin-left: 10px;
   cursor: pointer;
+  transition: all ease 0.5s;
 }
 
 .busca button:hover {
-  background-color: #444;
+  transform: scale(1.1);
+  color: white;
+  background-color: #696666;
 }
 
 .resultado {
@@ -130,7 +133,7 @@ body {
 
 .aviso {
   position: absolute;
-  top: 470px;
+  top: 485px;
   color: #0c0c0c;
   padding-top: 20px;
   font-family: sans-serif;

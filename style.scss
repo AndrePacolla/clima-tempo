@@ -37,7 +37,9 @@ body {
     border-radius: 5px;
     border: 0;
 }
-.busca button {
+.busca
+{
+ button {
     padding: 10px;
     font-size: 15px;
     font-weight: bold;
@@ -47,9 +49,13 @@ body {
     border-radius: 5px;
     margin-left: 10px;
     cursor: pointer;
+    transition: all ease .5s;
+}
 }
 .busca button:hover {
-    background-color: #444;
+    transform: scale(1.1);
+    color: white;
+    background-color: #696666;
 }
 
 .resultado {
@@ -94,13 +100,17 @@ body {
     font-size: 30px;
     font-weight: bold;
 }
-.tempInfo sup {
+.tempInfo {
+    sup {
     font-size: 15px;
     font-weight: normal;
 }
-.ventoInfo span {
+}
+.ventoInfo {
+    span {
     font-size: 15px;
     font-weight: normal;
+}
 }
 .ventoArea {
     width: 50px;
@@ -121,7 +131,7 @@ body {
 
 .aviso {
     position: absolute;
-    top: 470px;
+    top: 485px;
     color: #0c0c0c;
     padding-top: 20px;
     font-family: sans-serif;
