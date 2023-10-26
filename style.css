@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(assests/clima-bg.webp);
+  background-image: url(assests/clima-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
