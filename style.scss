@@ -24,7 +24,7 @@ body {
 
 .busca {
     position: absolute;
-    top: 440px;
+    top: 470px;
     left: 670px;
     display: flex;
     width: 300px;
@@ -120,12 +120,19 @@ body {
 }
 
 .aviso {
-    color: #FFF;
+    position: absolute;
+    top: 470px;
+    color: #0c0c0c;
     padding-top: 20px;
+    font-family: sans-serif;
+
+    img{
+        width: 90px;
+    }
 }
 
 footer {
-    margin-top: 650px;
+    margin-top: 720px;
     color: #0c0c0c;
     font-size: 16px;
 }
