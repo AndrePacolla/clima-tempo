@@ -10,7 +10,7 @@ document.querySelector(".busca").addEventListener("submit", async (event) => {
     let results = await fetch(url);
     let json = await results.json();
 
-    // code 200 ,  Serve tanto para estruturar quanto para selecionar oq quero usar!
+    // code 200 ,  Serve tanto para estruturar meu objeto, quanto para selecionar oq quero usar!
 
     if(json.cod === 200) {
         showinfo({
@@ -35,8 +35,7 @@ function showinfo(j){
     document.querySelector('.resultado').style.display = 'block';
     document.querySelector('.titulo').innerHTML = `${j.name} - ${j.country} 🔎`;
     document.querySelector('.tempInfo').innerHTML = `${j.temp} <sup>ºC</sup>`
-    document.querySelector('.ventoInfo').innerHTML = `${j.windSpeed}<span>km/h</span>`
-
+    document.querySelector('.ventoInfo').innerHTML = `${j.windSpeed} <span>km/h</span>`
 
 
 }
