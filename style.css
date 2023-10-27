@@ -57,7 +57,7 @@ body {
 .busca button:hover {
   transform: scale(1.1);
   color: white;
-  background-color: #696666;
+  background-color: rgb(9, 51, 61);
 }
 
 .resultado {
@@ -65,8 +65,8 @@ body {
   top: 70px;
   width: 320px;
   height: 350px;
-  display: non;
-  border: 3px dotted #FFF;
+  display: none;
+  border: 3px dotted #fff;
   margin-top: 20px;
   border-radius: 10px;
   background-color: rgb(9, 51, 61);
@@ -74,10 +74,11 @@ body {
 
 .titulo {
   width: 100%;
-  color: #FFF;
+  color: #fff;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
+  margin-top: 20px;
   padding: 20px;
 }
 
@@ -98,14 +99,14 @@ body {
 
 .tempTitulo,
 .ventoTitulo {
-  color: #777;
+  color: #ffffff;
   font-size: 16px;
-  margin-bottom: 5px;
+  margin-bottom: 45px;
 }
 
 .tempInfo,
 .ventoInfo {
-  color: #FFF;
+  color: #fff;
   font-size: 30px;
   font-weight: bold;
 }
@@ -113,6 +114,10 @@ body {
 .tempInfo sup {
   font-size: 15px;
   font-weight: normal;
+}
+
+.temp img {
+  margin-top: 20px;
 }
 
 .ventoInfo span {
@@ -123,10 +128,10 @@ body {
 .ventoArea {
   width: 50px;
   height: 50px;
-  border: 1px solid #FFF;
+  border: 2px solid #fff;
   border-radius: 50%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
   padding-left: 25px;
   padding-top: 25px;
 }
@@ -134,7 +139,7 @@ body {
 .ventoPonto {
   width: 15px;
   height: 1px;
-  background-color: #FFF;
+  background-color: #fff;
   transform-origin: left;
 }
 

@@ -1,49 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
 }
-    
+
 body {
-    display: flex;
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(assests/clima-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(assests/clima-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .busca {
-    position: absolute;
-    top: 470px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    width: 300px;
+  position: absolute;
+  top: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 300px;
 }
 .busca #searchInput {
-    flex: 1;
-    padding: 10px;
-    outline: none;
-    font-size: 15px;
-    border-radius: 5px;
-    border: 0;
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 0;
 }
-.busca
-{
- button {
+.busca {
+  button {
     padding: 10px;
     font-size: 15px;
     font-weight: bold;
@@ -53,106 +51,110 @@ body {
     border-radius: 5px;
     margin-left: 10px;
     cursor: pointer;
-    transition: all ease .5s;
-}
+    transition: all ease 0.5s;
+  }
 }
 .busca button:hover {
-    transform: scale(1.1);
-    color: white;
-    background-color: #696666;
+  transform: scale(1.1);
+  color: white;
+  background-color: rgb(9, 51, 61);
 }
 
 .resultado {
-    position: absolute;
-    top: 70px;
-    width: 320px;
-    height: 350px;
-    display: non;
-    border: 3px dotted #FFF;
-    margin-top: 20px;
-    border-radius: 10px;
-    background-color: rgb(9, 51, 61);
+  position: absolute;
+  top: 70px;
+  width: 320px;
+  height: 350px;
+  display: none;
+  border: 3px dotted #fff;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgb(9, 51, 61);
 }
 
 .titulo {
-    width: 100%;
-    color: #FFF;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .info {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 .info .temp {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 .info .vento {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 .tempTitulo,
 .ventoTitulo {
-    color: #777;
-    font-size: 16px;
-    margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 45px;
 }
 .tempInfo,
 .ventoInfo {
-    color: #FFF;
-    font-size: 30px;
-    font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
 }
 .tempInfo {
-    sup {
+  sup {
     font-size: 15px;
     font-weight: normal;
+  }
 }
+.temp img {
+  margin-top: 20px;
 }
 .ventoInfo {
-    span {
+  span {
     font-size: 15px;
     font-weight: normal;
-}
+  }
 }
 .ventoArea {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #FFF;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 20px;
-    padding-left: 25px;
-    padding-top: 25px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 40px;
+  padding-left: 25px;
+  padding-top: 25px;
 }
 .ventoPonto {
-    width: 15px;
-    height: 1px;
-    background-color: #FFF;
-    transform-origin: left;
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  transform-origin: left;
 }
-.img{
-    width: 90px;
+.img {
+  width: 90px;
 }
 
 .aviso {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 495px;
-    color: #131313;
-    padding-top: 20px;
-    font-family: sans-serif;
-    font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 495px;
+  color: #131313;
+  padding-top: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 footer {
-    margin-top: 720px;
-    color: #0c0c0c;
-    font-size: 16px;
+  margin-top: 720px;
+  color: #0c0c0c;
+  font-size: 16px;
 }
