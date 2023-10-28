@@ -28,23 +28,23 @@ document.querySelector(".busca").addEventListener("submit", async (event) => {
       showWarning("Localização não encontrada 💢");
     }
   } else {
-    clearInfo()
+    clearInfo();
   }
 });
 
 // estrutudando/ manipulando o DOM.
 function showinfo(j){
-    showGif();
     hiddenGif();
-    
 
-    document.querySelector('.resultado').style.display = 'block';
     document.querySelector('.titulo').innerHTML = `${j.name} - ${j.country} 🔎`;
     document.querySelector('.tempInfo').innerHTML = `${j.temp} <sup>ºC</sup>`
     document.querySelector('.ventoInfo').innerHTML = `${j.windSpeed} <span>km/h</span>`
 
     document.querySelector('.temp img').setAttribute('src' , `http://openweathermap.org/img/wn/${j.tempIcon}@2x.png`)
     document.querySelector('.ventoPonto').style.transform = `rotate(${j.windAngle-90}deg)`;
+
+    document.querySelector('.resultado').style.display = 'block';
+
 };
 
 
