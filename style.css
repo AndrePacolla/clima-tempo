@@ -60,6 +60,11 @@ body {
   background-color: rgb(9, 51, 61);
 }
 
+.busca img {
+  position: absolute;
+  display: none;
+}
+
 .resultado {
   position: absolute;
   top: 70px;
@@ -160,8 +165,38 @@ body {
   font-weight: bold;
 }
 
+.busca #searchInput {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 footer {
   margin-top: 720px;
   color: #0c0c0c;
   font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    max-width: 600px;
+    background-image: none;
+    background-color: #39ffd5;
+  }
+  .busca img {
+    display: flex;
+    width: 380px;
+    top: -420px;
+  }
+  .resultado {
+    position: absolute;
+    top: 20px;
+    width: 320px;
+    height: 350px;
+  }
+  footer {
+    margin-top: 600px;
+    color: #0c0c0c;
+    font-weight: bold;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
